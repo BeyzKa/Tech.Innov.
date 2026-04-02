@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taskage — AI Meeting Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">TASKAGE</a>
+      <ul class="nav-links">
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode">
+        <span class="theme-toggle-icon" id="toggle-icon">Dark</span>
+        <div class="theme-toggle-track">
+          <div class="theme-toggle-thumb"></div>
+        </div>
+      </button>
+      <a href="#cta" class="btn btn-nav">Get Early Access</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-tag">System-wide Agentic Assistant</span>
+          <span class="eyebrow-tag">B2B · SaaS · 2026</span>
+        </div>
+        <h1 class="hero-headline">
+          <span class="hl">Meetings that</span>
+          <span class="hl hl-accent">actually end</span>
+          <span class="hl">in action.</span>
+        </h1>
+        <p class="hero-sub">
+          Taskage joins your meetings, listens in real time, and converts every spoken decision into a tracked task assigned to the right person, with the right clearance, on the right platform.
+        </p>
+        <div class="hero-actions">
+          <a href="#cta" class="btn btn-primary">Request Early Access</a>
+          <a href="#how" class="btn btn-ghost">See How It Works &rarr;</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="terminal">
+          <div class="terminal-titlebar">
+            <div class="terminal-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="terminal-name">taskage — live session</span>
+          </div>
+          <div class="terminal-body" id="terminal-body">
+            <!-- JS will fill this part -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICS -->
+  <section class="metrics reveal">
+    <div>
+      <span class="metric-value">$1.5T</span>
+      <span class="metric-label">yearly cost of meeting inefficiency worldwide</span>
+    </div>
+    <div>
+      <span class="metric-value">9.4%</span>
+      <span class="metric-label">AI meeting assistant market CAGR through 2026</span>
+    </div>
+    <div>
+      <span class="metric-value">150k+</span>
+      <span class="metric-label">target SMEs in English-speaking markets</span>
+    </div>
+    <div>
+      <span class="metric-value">3</span>
+      <span class="metric-label">core integrations from day one: Jira, Asana, Notion</span>
+    </div>
+    <div>
+      <span class="metric-value">2</span>
+      <span class="metric-label">checks before every assignment: qualification and workload</span>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem" id="problem">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">01 &mdash; The Problem</span>
+        <h2>Your meetings are a black hole for decisions.</h2>
+      </div>
+      <div class="problem-body">
+        <div class="problem-text">
+          <p>Tasks are verbally assigned and then forgotten during meetings. Sometimes the wrong person gets a job they cannot access or someone has too much on their plate while another sits idle. After a short while, nobody remembers what was decided.</p>
+          <p>Existing tools transcribe or summarize. They document the past. <em>None of them close the gap between discussion and execution. Taskage does.</em></p>
+        </div>
+        <div class="problem-cards">
+          <div class="pcard">
+            <span class="pcard-num">01</span>
+            <h4>Tasks get forgotten</h4>
+            <p>Verbal assignments vanish. No record, no follow-through.</p>
+          </div>
+          <div class="pcard">
+            <span class="pcard-num">02</span>
+            <h4>Wrong person assigned</h4>
+            <p>No clearance or workload checks. The task goes to whoever spoke last. Inefficiency arises.</p>
+          </div>
+          <div class="pcard">
+            <span class="pcard-num">03</span>
+            <h4>Manual entry overhead</h4>
+            <p>Task must still be created by hand after the call and type everything in manually.</p>
+          </div>
+          <div class="pcard">
+            <span class="pcard-num">04</span>
+            <h4>No real-time alerts</h4>
+            <p>Managers find out about bottlenecks days later, when it is already too late.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">02 &mdash; How It Works</span>
+        <h2>From spoken word to Jira ticket in seconds.</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <h3>Taskage Joins the Meeting</h3>
+            <p>Taskage connects to your video call and begins real-time audio processing. Whisper-based multilingual transcription captures every speaker and every word, in any language.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <h3>Semantic Task Detection</h3>
+            <p>A LLaMA-type language model analyzes the transcript to extract tasks, assignees, due dates, and context. Each extraction comes with a confidence score and low-confidence tasks trigger a manager confirmation immediately.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <h3>Clearance &amp; Workload Validation</h3>
+            <p>Before any task is created, Taskage cross-references the assignee against their internal role and permission database, preventing unauthorized assignments or overloaded team members.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-body">
+            <h3>Automatic Task Creation</h3>
+            <p>Tasks are pushed directly to Jira, Asana, or Notion via secure API assigned, labeled, and contextualized. If no valid assignee exists, managers receive a real-time alert.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">03 &mdash; Capabilities</span>
+        <h2>Built for execution as well as documentation.</h2>
+      </div>
+      <div class="features-layout">
+        <div class="feature-anchor">
+          <div class="fa-rule"></div>
+          <h3>Agentic Execution</h3>
+          <p>Unlike passive meeting recorders, Taskage acts. It does not produce a document to be parsed later, it creates the tasks, assigns them, and notifies the right people. The work is already in motion when the meeting ends.</p>
+          <p>This is the gap no existing tool fills: not transcription or summarization, but the step after, making sure decisions translate into real world.</p>
+        </div>
+        <div class="features-list">
+          <div class="feat-item">
+            <span class="feat-name">Confidence Scoring</span>
+            <p>Every extracted task receives a confidence rating. Ambiguous assignments are flagged for manager review rather than silently miscreated.</p>
+          </div>
+          <div class="feat-item">
+            <span class="feat-name">Multi-Platform Integration</span>
+            <p>Native API integrations with Jira, Asana, and Notion. Tasks arrive in whatever tool your team already uses no migration required.</p>
+          </div>
+          <div class="feat-item">
+            <span class="feat-name">Role-Based Routing</span>
+            <p>Assignments are validated against your organizational chart. Clearance levels and qualifications are checked before task finalization.</p>
+          </div>
+          <div class="feat-item">
+            <span class="feat-name">Real-Time Manager Alerts</span>
+            <p>If no available team member can accept a task, managers are notified immediately during the meeting, to be resolved quickly.</p>
+          </div>
+          <div class="feat-item">
+            <span class="feat-name">Encrypted Storage</span>
+            <p>All meeting data and task records are stored encrypted. KVKK-compliant architecture for organizations operating under Turkish data law.</p>
+          </div>
+          <div class="feat-item">
+            <span class="feat-name">Multilingual Support</span>
+            <p>Whisper-based transcription handles diverse accents and grammars, making Taskage viable for international and distributed teams.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="comparison">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">04 &mdash; Versus The Market</span>
+        <h2>Everyone records. Taskage is one step ahead.</h2>
+      </div>
+      <div class="table-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Capability</th>
+              <th>Otter.ai</th>
+              <th>Fireflies.ai</th>
+              <th>MS Teams</th>
+              <th class="col-us">Taskage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Meeting transcription</td>
+              <td class="yes">Yes</td>
+              <td class="yes">Yes</td>
+              <td class="yes">Yes</td>
+              <td class="yes col-us">Yes</td>
+            </tr>
+            <tr>
+              <td>Automatic summaries</td>
+              <td class="yes">Yes</td>
+              <td class="yes">Yes</td>
+              <td class="yes">Yes</td>
+              <td class="yes col-us">Yes</td>
+            </tr>
+            <tr>
+              <td>Task detection from speech</td>
+              <td class="no">No</td>
+              <td class="partial">Partial</td>
+              <td class="no">No</td>
+              <td class="yes col-us">Yes</td>
+            </tr>
+            <tr>
+              <td>Auto task creation in PM tools</td>
+              <td class="no">No</td>
+              <td class="no">No</td>
+              <td class="no">No</td>
+              <td class="yes col-us">Yes</td>
+            </tr>
+            <tr>
+              <td>Clearance validation</td>
+              <td class="no">No</td>
+              <td class="no">No</td>
+              <td class="no">No</td>
+              <td class="yes col-us">Yes</td>
+            </tr>
+            <tr>
+              <td>Workload-aware assignment</td>
+              <td class="no">No</td>
+              <td class="no">No</td>
+              <td class="no">No</td>
+              <td class="yes col-us">Yes</td>
+            </tr>
+            <tr>
+              <td>Real-time manager alerts</td>
+              <td class="no">No</td>
+              <td class="no">No</td>
+              <td class="no">No</td>
+              <td class="yes col-us">Yes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">05 &mdash; Pricing</span>
+        <h2>Fair pricing. No per-seat tricks.</h2>
+      </div>
+      <p class="pricing-note">Billed annually per organization. Usage limits are generous enough that most teams will never reach them.</p>
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <p class="price-tier">Small teams</p>
+          <h3>$5,000<span>/year</span></h3>
+          <p>For firms with up to 20 users.</p>
+          <ul>
+            <li>Core meeting capture and task extraction</li>
+            <li>Validation workflow</li>
+            <li>Integration support</li>
+          </ul>
+          <a href="#cta" class="btn btn-outline">Request Access</a>
+        </article>
+        <article class="price-card price-card-featured reveal reveal-delay-1">
+          <p class="price-tier">Growing firms</p>
+          <h3>$12,000<span>/year</span></h3>
+          <p>For organizations with 20–100 users.</p>
+          <ul>
+            <li>Higher usage capacity</li>
+            <li>Priority support</li>
+            <li>Broader deployment</li>
+          </ul>
+          <a href="#cta" class="btn btn-primary">Request Access</a>
+        </article>
+        <article class="price-card reveal reveal-delay-2">
+          <p class="price-tier">Enterprise</p>
+          <h3>Custom</h3>
+          <p>For larger organizations with custom workflow and infrastructure needs.</p>
+          <ul>
+            <li>Tailored rollout</li>
+            <li>Custom pricing</li>
+            <li>Expanded compliance requirements</li>
+          </ul>
+          <a href="#cta" class="btn btn-outline">Contact Sales</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">06 &mdash; The Team</span>
+        <h2>Built by engineers, for engineering teams.</h2>
+      </div>
+      <div class="team-row">
+        <div class="tm">
+          <div class="tm-role">AI &amp; System Architecture Lead</div>
+          <h3>Ömer Faruk Ekmekçi</h3>
+          <p>Leads AI task extraction logic and system architecture. Specialized in automated transcription pipelines and language model inference.</p>
+        </div>
+        <div class="tm">
+          <div class="tm-role">Backend &amp; Integration Lead</div>
+          <h3>Süleyman Enis Otağ</h3>
+          <p>Responsible for all API integrations with task management platforms and the full backend system infrastructure.</p>
+        </div>
+        <div class="tm">
+          <div class="tm-role">DevOps &amp; Workflow Lead</div>
+          <h3>Beyza Kaya</h3>
+          <p>Manages operational flow, CI/CD pipelines, and Jira-side integrations. Deep background in enterprise DevOps practice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="cta">
+    <div class="section-inner cta-inner">
+      <span class="section-label">Join the Waitlist</span>
+      <h2>Stop letting meetings end in silence.</h2>
+      <p>Taskage is currently onboarding pilot customers. Leave your email and we will be in touch.</p>
+      <form class="cta-form" id="cta-form">
+        <input type="email" placeholder="your@company.com" required class="cta-input" />
+        <button type="submit" class="btn btn-primary">Join Waitlist</button>
+      </form>
+      <p class="cta-disclaimer">No sales calls unless you ask for one.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-logo">TASKAGE</div>
+        <div class="footer-sub">Meetings that mean something.</div>
+      </div>
+      <div class="footer-nav">
+        <a href="#problem">Problem</a>
+        <a href="#how">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div class="footer-right">
+        <span>Lannisters &mdash; 2026. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
